@@ -22,5 +22,6 @@ jobs:
         with:
           context: ./worker
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/aidp-render-worker:latest
+          tags: |
+  ${{ secrets.DOCKERHUB_USERNAME }}/aidp-render-worker:latest
   ${{ secrets.DOCKERHUB_USERNAME }}/aidp-render-worker:v2
