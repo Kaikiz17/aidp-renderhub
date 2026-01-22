@@ -65,7 +65,7 @@ def render(blend_file, frame_start, frame_end, resolution, output_format, output
         # Real FFmpeg conversion
         if output_format == 'mp4':
             print("Converting to MP4...")
-            final_mp4 = os.path.join(output_dir, "final.mp4")
+            final_mp4 = os.path.join(output_dir, "output.mp4")
             
             ffmpeg_cmd = shutil.which("ffmpeg")
             if ffmpeg_cmd:
